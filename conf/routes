@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET        /                    controllers.HomeController.index
+GET        /1s                  controllers.HomeController.delay1s()
+GET        /10s                 controllers.HomeController.delay10s()
+GET        /30s                 controllers.HomeController.delay30s()
+GET        /clear               controllers.HomeController.clearQps()
+GET        /qps                 controllers.HomeController.getQps()
